@@ -1,15 +1,31 @@
-<h2>The hidden chosen word: <%=hidden_word_array%></h2>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+
+</style>
+
+
+</head>
+<p class="g">The hidden chosen word:</p><p class="k"><%=hidden_word_array.join(" ")%></p>
 
 <form method="post" action="choose_letter">
-	<input type="hidden" name="hidden_word_array" value='<%=hidden_word_array%>'><br>	
-<h3> Second Player choose a letter:</h3>
-	<input type="text" name="letter" pattern="[A-Za-z]{1}"><br>
+<p class="c"><input type="hidden" name="hidden_word_array" value='<%=hidden_word_array%>'></p>
+
+<p class="g">Second Player choose a letter:</p>
+<p class="f"><input type="text" maxlength="1" name="letter" pattern="[A-Za-z]{1}" autofocus>
 	<input type="submit" value="Add">
-
-<h3> Here are your incorrect guesses:</h3>
-	<%=incorrect_guesses%>
+<h3>WRONG GUESSES</h3>
+<body class="background2">
+	<%picphotos = ["/img/image0.png","/img/image1.png","/img/image2.png","/img/image3.png","/img/image4.png","/img/image5.png", "/img/image6.png","/img/image7.png","/img/image8.png","/img/image9.png","/img/image10.png","/img/image11.png","/img/image12.png","/img/image13.png"]%>
+<p class="d">
+       <img src= '<%=picphotos[session[:incorrect_guesses].length]%>'>
+</p>
+<p class="m">Here are your incorrect letter guesses: <%=incorrect_guesses.join(" ")%></p>
+</body>
 </form>
-
-
+</html>
 
 

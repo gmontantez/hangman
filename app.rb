@@ -26,15 +26,23 @@ post '/choose_letter' do
   session[:letter] = params[:letter]
   session[:hidden_word_array] = update_hidden_word_arr(session[:hidden_word_array], session[:chosen_word], session[:letter])
   session[:incorrect_guesses] = update_incorrect_word_arr(session[:incorrect_guesses], session[:chosen_word], session[:letter])
-  if session[:hidden_word_array].include?("_") && session[:incorrect_guesses].length < 6 
+  if session[:hidden_word_array].include?("_") && session[:incorrect_guesses].length < 13
   	redirect '/choose_letter'
-  elsif session[:incorrect_guesses].length >= 6
-    redirect '/you_lost'
+  elsif session[:incorrect_guesses].length >= 13
+    redirect '/losing_result'
   else 
-   	redirect '/results'
+   	redirect '/winning_result'
   end
 end
 
-get '/results' do
-	erb :results, locals:{hidden_word_array: session[:hidden_word_array]}
+get '/winning_result' do
+	erb :winning_result, locals:{chosen_word: session[:chosen_word]}
+end
+
+get '/losing_result' do
+  erb :losing_result, locals:{chosen_word: session[:chosen_word]}
+end
+
+get '/instructions' do
+  erb :instructions
 end

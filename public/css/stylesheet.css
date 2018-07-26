@@ -1,0 +1,153 @@
+.background1 {
+    background-image: url(/img/hangman1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2 {
+    background-image: url(/img/noose.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3 {
+	background-image: url(/img/hang1.gif), url(/img/running.gif), url(/img/blackboard.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
+.background4 {
+    background-image:  url(/img/gallows1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+}
+
+.background5 {
+    background-image: url(/img/blackboard.jpg);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+	color: #ff0000;/*red*/
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	color: #ff0000;/*red*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	text-align: right;
+	font-weight: bold;
+	padding-right: 4.25rem;
+}
+
+p.b {
+	color: #ff0000;/*red*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	font-size: 2.75rem;
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+	padding: 250px;
+	padding-left: 700px;
+}
+
+p.c {
+	color: #ff0000;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+p.d {
+	text-align: right;
+	padding-right: 5rem;
+}
+
+p.e {
+	padding-top: 50px;
+}
+
+p.f {
+	text-indent: 40px;
+}
+
+p.g {
+	font-size: 1.50rem;
+	margin-left: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+p.h {
+	color: #ff0000;/*red*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	font-size: 3.00rem;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 75px;
+}
+
+p.j {
+	color:yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	font-size: 2.50rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.k {
+	color:yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 40px;
+}
+
+p.m {
+	color: #ff471a;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+	font-size: 1.90rem;
+	font-weight: bold;
+	text-align: left;
+	border-style: double ridge;
+	border-width: 15x;
+	border-color: red;
+	background-color: gray;
+}
+
+p.n {
+	color: #66ff33;/*green*/
+	font-size: 2.75rem;
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+	padding: 300px;
+	padding-left: 700px;
+}
+
+li {
+	display: inline;
+	font-size: 1.5rem;
+	text-align: left;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+ul {
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+}
+
+a:hover {
+    background-color: yellow;
+}

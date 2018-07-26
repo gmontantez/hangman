@@ -25,8 +25,9 @@ end
 def update_incorrect_word_arr(incorrect_guesses, word, letter)
   word = word.downcase
   letter = letter.downcase
-  if word.split("").include?(letter) == false
+  if word.split("").include?(letter) == false && incorrect_guesses.include?(letter) == false
     incorrect_guesses << letter
+    incorrect_guesses.uniq
   end
   incorrect_guesses
 end
